@@ -16,11 +16,64 @@ struct ContentView: View {
         }
     }
     var content: some View {
-        VStack(spacing: 40) {
-            // MARK: Progress Ring
+        ZStack{
+            VStack(spacing: 40) {
+                //title
+                Text("Let's start!")
+                    .font(.headline)
+                    .foregroundStyle(Color(#colorLiteral(red: 0.3843137255, green: 0.5176470588, blue: 1, alpha: 1)))
+                //
+                
+                Text("16:8")
+                    .fontWeight(.semibold)
+                    .padding(.horizontal, 24)
+                    .padding(.vertical, 8)
+                    .background(.thinMaterial)
+                    .cornerRadius(20)
+                //add spacer to push them to the top
+                Spacer()
+            }
+            .padding()
             
-            ProgressRing()
+            VStack(spacing: 40) {
+                //progress ring
+                
+                ProgressRing()
+                
+                HStack(spacing: 60) {
+                    //start time
+                    VStack(spacing: 5) {
+                        Text("Start")
+                            .opacity(0.7)
+                        Text(Date(), format: .dateTime.weekday().hour().minute().second())
+                            .fontWeight(.bold)
+                    }
+                    //end time
+                    VStack(spacing: 5) {
+                        Text("End")
+                            .opacity(0.7)
+                        Text(Date().addingTimeInterval(16), format: .dateTime.weekday().hour().minute().second())
+                            .fontWeight(.bold)
+                    }
+                }
+                //Button
+                Button {
+                    
+                }label: {
+                    Text("start")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .padding(.horizontal, 24)
+                        .padding(.vertical, 8)
+                        .background(.thinMaterial)
+                        .cornerRadius(20)
+                    
+                }
+            }
+            .padding()
+           
         }
+        .foregroundStyle(.white)
     }
 }
 
