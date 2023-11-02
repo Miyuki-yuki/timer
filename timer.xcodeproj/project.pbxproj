@@ -12,6 +12,7 @@
 		969895252AF13BE5004D14B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 969895242AF13BE5004D14B6 /* Assets.xcassets */; };
 		969895282AF13BE5004D14B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 969895272AF13BE5004D14B6 /* Preview Assets.xcassets */; };
 		969895312AF13D39004D14B6 /* ProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969895302AF13D39004D14B6 /* ProgressRing.swift */; };
+		9698954D2AF1E429004D14B6 /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9698954C2AF1E429004D14B6 /* TimeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		969895242AF13BE5004D14B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		969895272AF13BE5004D14B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		969895302AF13D39004D14B6 /* ProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRing.swift; sourceTree = "<group>"; };
+		9698954C2AF1E429004D14B6 /* TimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				969895202AF13BE2004D14B6 /* timerApp.swift */,
 				969895222AF13BE2004D14B6 /* ContentView.swift */,
 				969895302AF13D39004D14B6 /* ProgressRing.swift */,
+				9698954C2AF1E429004D14B6 /* TimeManager.swift */,
 				969895242AF13BE5004D14B6 /* Assets.xcassets */,
 				969895262AF13BE5004D14B6 /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				969895232AF13BE2004D14B6 /* ContentView.swift in Sources */,
 				969895212AF13BE2004D14B6 /* timerApp.swift in Sources */,
+				9698954D2AF1E429004D14B6 /* TimeManager.swift in Sources */,
 				969895312AF13D39004D14B6 /* ProgressRing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
